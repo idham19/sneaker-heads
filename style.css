@@ -27,40 +27,70 @@ Images:
 - "https://i.pinimg.com/236x/d6/3f/56/d63f563519df0ece564b82c72e9e306c.jpg"
     - (You may use any image you would like for the background!)
 */
-
-#jordans-2 {
-  height: 400px;
-  width: 600px;
+* {
+  padding: 0;
+  margin: 0;
+  text-align: center;
 }
+body {
+  background-image: url("bg-image.png");
+  background-size: cover;
+  background-position: center;
+}
+
+#images {
+  display: flex;
+  justify-content: space-between;
+}
+#row1 {
+  margin-right: 4rem;
+ 
+  
+}
+#row2 {
+  margin-left: 4rem;
+}
+
 #jordans-1 {
   height: 400px;
   width: 600px;
+  border-right:solid 8px ;
+  border-color: blue;
 }
-a{
-text-decoration: none;
-
+#jordans-2 {
+  height: 400px;
+  width: 600px;
+  border-left:solid 8px ;
+  border-color:red;
 }
-p{
-    color: white;
-    margin: 2rem;
+#jordans-1-desc {
+  background-color: rgb(116, 201, 241);
 }
-
-body{
-    background-image: url("bg-image.png");
-    background-size: cover;
-    background-position: center;
-    display: block;
-    text-align: center;
-    margin:0;
+#jordans-2-desc {
+  background-color: rgb(251, 64, 64);
 }
 
-#images{
- display: flex;
- padding: 1rem;
- margin: 2rem;
+a {
+  text-decoration: none;
 }
-h1{
-    color: white;
-    background-size: 100%;
-    background-color: red;
+p {
+  color: white;
+  margin: 2rem;
+  border: solid 2px;
+  padding: 1rem;
+  border-radius: 5%;
+  line-height: 1.5rem;
+  font-weight: bold;
+  font-size: 1.5rem;
+  width: 600px;
+}
+
+h1 {
+  
+  background-size: 100%;
+  /* background-color: red; */
+  background-image: linear-gradient(to right, #f06b6b, #f7f06b);
+  color: white;
+  margin-bottom: 8rem;
+  padding: 2rem;
 }
